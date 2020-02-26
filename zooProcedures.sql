@@ -141,14 +141,14 @@ BEGIN
 	INSERT INTO tbl_species
 		(species_name, species_animalia, species_class, species_order, species_habitat, species_nutrition, species_care)
 		VALUES
-		('brown bear', 1, 102, 3, 5007, 2200, 'care_1'),
-		('jaguar', 1, 102, 1, 5007, 2200, 'care_4'),
+		('brown bear', 1, 102, 3, 5001, 2200, 'care_1'),
+		('jaguar', 1, 102, 1, 5002, 2200, 'care_4'),
 		('penguin', 1, 100, 1, 5003, 2200, 'care_6'),
-		('ghost bat', 1, 102, 1, 5007, 2204, 'care_2'),
-		('chicken', 1, 100, 3, 5001, 2205, 'care_0'),
+		('ghost bat', 1, 102, 1, 5004, 2204, 'care_2'),
+		('chicken', 1, 100, 3, 5005, 2205, 'care_0'),
 		('panda', 1, 102, 3, 5006, 2202, 'care_4'),
-		('bocat', 1, 102, 1, 5001, 2204, 'care_5'),
-		('grey wolf', 1, 102, 1, 5000, 2201,'care_4')
+		('bocat', 1, 102, 1, 5006, 2204, 'care_5'),
+		('grey wolf', 1, 102, 1, 5005, 2201,'care_4')
 		;
 	SELECT * FROM tbl_species;
 
@@ -279,6 +279,7 @@ BEGIN TRY
 END
 
 USE [db_zooTest2]
+
 GO
 
 DECLARE @totalHab MONEY;
